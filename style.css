@@ -1,0 +1,145 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #4db8ff 50%, #ff99cc 50%); /*Faz uma mistura suave entre as cores*/
+  color: white;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Menu */
+nav {
+  background: rgba(255,255,255,0.2);
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+nav a {
+  text-decoration: none;
+  color: black; 
+  font-weight: bold;
+}
+nav a:hover{
+  color:white;
+}
+/* Conteúdo geral */
+section {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+/* Seção Sobre nós */
+.sobre {
+  display: flex;           /* Flexbox */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.sobre img {
+  max-width: 350px;
+  border-radius: 10px;
+}
+
+/* Grid de produtos */
+.produtos {
+  display: grid;           /* Grid */
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  max-width: 1000px;
+  margin: auto;
+}
+
+.produtos div {
+  background: rgba(0,0,0,0.2);
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.produtos img {
+  width: 100%;
+  border-radius: 10px;
+}
+.logo{
+      display: flex;           
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+}
+    
+
+/* Rodapé */    
+footer {
+  text-align: center;
+  padding: 20px;
+  background: rgba(0,0,0,0.3);
+  margin-top: 20px;
+}
+footer {
+  background-color:linear-gradient(to right, #4db8ff 50%, #ff99cc 50%);;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  padding: 40px 0;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  min-width: 200px;
+  margin: 10px 20px;
+}
+
+.footer-column h3 {
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+.footer-column p {
+  margin: 8px 0;
+  font-size: 14px;
+}
+
+.footer-column a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-column a:hover {
+  text-decoration: underline;
+}
+#fachada{
+  display: flex;           
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 10px;
+}
+h1{
+  text-align: center;
+  background-color: rgba(255,255,255,0.2); ;
+}
+#h2{
+  text-align: center;
+
+}
+.localização{
+  text-align: center;
+}

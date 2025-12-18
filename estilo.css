@@ -1,56 +1,110 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
 
 body {
-  font-family: Arial, sans-serif;
-  background: linear-gradient(to right, #4db8ff 50%, #ff99cc 50%); /*Faz uma mistura suave entre as cores*/
-  color: white;
+    min-height: 100vh;
+    background: linear-gradient(90deg, #5db9ff 50%, #ff9ecd 50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 20px;
 }
 
-/* Cabeçalho */
+/* Título Superior */
 header {
-  text-align: center;
-  padding: 40px 20px;
+    text-align: center;
+    color: white;
+    margin-bottom: 30px;
+    text-shadow: 0 4px 10px rgba(0,0,0,0.1);
 }
 
-/* Menu */
+header h1 { font-size: 2.5rem; letter-spacing: 2px; }
+
+/* O Cartão Efeito Vidro */
+.glass-container {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(10px); /* Desfoca o fundo */
+    border-radius: 30px;
+    width: 100%;
+    max-width: 900px;
+    padding: 40px;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255,255,255,0.4);
+}
+
+/* Menu Moderno */
 nav {
-  background: rgba(255,255,255,0.2);
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 40px;
 }
 
 nav a {
-  text-decoration: none;
-  color: black; 
-  font-weight: bold;
-}
-nav a:hover{
-  color:white;
-}
-/* Conteúdo geral */
-section {
-  padding: 40px 20px;
-  text-align: center;
+    text-decoration: none;
+    color: #666;
+    padding: 8px 20px;
+    border-radius: 20px;
+    transition: 0.3s;
+    font-size: 0.9rem;
 }
 
-/* Seção Sobre nós */
-.sobre {
-  display: flex;           /* Flexbox */
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  max-width: 900px;
-  margin: auto;
+nav a:hover, nav a.active {
+    background: white;
+    color: #333;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
 }
 
-.sobre img {
-  max-width: 350px;
-  border-radius: 10px;
+/* Estilo do Formulário */
+.form-wrapper {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
 }
 
-/* Grid de produtos */
+.form-wrapper h2 {
+    margin-bottom: 25px;
+    color: #444;
+}
+
+.input-box {
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.9);
+    outline: none;
+    font-size: 1rem;
+    color: #555;
+}
+
+textarea { height: 120px; resize: none; }
+
+button {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 12px;
+    background: #333;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #555;
+    transform: translateY(-2px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
 .produtos {
   display: grid;           /* Grid */
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -79,133 +133,203 @@ section {
   margin: auto;
   border-radius: 10px;
 }
-    
-
-/* Rodapé */    
-footer {
-  text-align: center;
-  padding: 20px;
-  background: rgba(0,0,0,0.3);
-  margin-top: 20px;
-}
-footer {
-  background-color:linear-gradient(to right, #4db8ff 50%, #ff99cc 50%);;
-  color: white;
-  display: flex;
-  justify-content: space-around;
-  padding: 40px 0;
-  flex-wrap: wrap;
+/* Configurações Gerais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-.footer-column {
-  min-width: 200px;
-  margin: 10px 20px;
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(90deg, #5db9ff 50%, #ff9ecd 50%);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #444;
 }
 
-.footer-column h3 {
-  color: white;
-  font-size: 16px;
-  font-weight: 700;
-  margin-bottom: 15px;
+/* Cabeçalho */
+.main-header {
+    text-align: center;
+    color: white;
+    padding: 40px 20px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
-.footer-column p {
-  margin: 8px 0;
-  font-size: 14px;
+.main-header h1 { font-size: 2.5rem; letter-spacing: 2px; }
+
+/* Container Principal (Efeito Vidro) */
+.main-card {
+    background: rgba(255, 255, 255, 0.75);
+    backdrop-filter: blur(15px);
+    border-radius: 30px;
+    width: 90%;
+    max-width: 1000px;
+    padding: 30px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.footer-column a {
-  color: white;
-  text-decoration: none;
+/* Navbar dentro do card */
+.navbar {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
 }
 
-.footer-column a:hover {
-  text-decoration: underline;
+.navbar a {
+    text-decoration: none;
+    background: white;
+    padding: 8px 20px;
+    border-radius: 10px;
+    color: #666;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: 0.3s;
 }
-#fachada{
-  display: flex;           
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-  max-width: 400px;
-  margin: auto;
-  border-radius: 10px;
+
+.navbar a:hover {
+    background: #f0f0f0;
+    transform: translateY(-2px);
 }
-h1{
-  text-align: center;
-  background-color: rgba(255,255,255,0.2); ;
+
+/* Seção da Loja */
+.store-section h2 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #555;
 }
-#h2{
-  text-align: center;
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
 }
-.localização{
-  text-align: center;
+
+.info-card {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
-@media screen and (max-width:770px){
-    #topo{
-        background-color:darkblue;
+
+.logo-img { max-width: 80%; height: auto; }
+
+.store-img {
+    width: 100%;
+    max-width: 200px;
+    border-radius: 10px;
+    margin-top: 15px;
+}
+
+.text-content h3 { font-size: 1.1rem; margin-bottom: 10px; color: #333; }
+.text-content p { font-size: 0.85rem; color: #777; }
+
+/* Rodapé */
+.footer-glass {
+    width: 100%;
+    margin-top: 40px;
+    background: rgba(0, 0, 0, 0.2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 30px;
+    color: white;
+    text-align: center;
+}
+
+.footer-col h4 { font-size: 0.8rem; margin-bottom: 10px; opacity: 0.9; }
+.footer-col p { font-size: 0.75rem; opacity: 0.8; line-height: 1.5; }
+
+/* Responsivo para Celular */
+@media (max-width: 768px) {
+    .grid-container { grid-template-columns: 1fr; }
+    .footer-glass { grid-template-columns: 1fr; gap: 20px; }
+}
+/* --- CONFIGURAÇÕES BASE (Mobile First ou Desktop First) --- */
+
+/* Estilo padrão (Desktop acima de 1024px) */
+.glass-container {
+    width: 90%;
+    max-width: 1000px;
+    padding: 40px;
+}
+
+.grid-loja {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Dois cards lado a lado */
+    gap: 30px;
+}
+
+.navbar {
+    flex-wrap: nowrap; /* Menu em linha reta */
+}
+
+/* --- RESPONSIVIDADE (Media Queries) --- */
+
+/* 1. TABLET (Até 768px) */
+@media (max-width: 768px) {
+    .glass-container {
+        width: 95%;
+        padding: 20px;
     }
-    .containertopo{
-        flex-direction:column-reverse;
-        align-items:center;
+
+    .main-header h1 {
+        font-size: 2rem;
     }
-    .menu{
-        background-color:grey;
-        width:100%;
+
+    /* No tablet, ainda podemos manter o grid, mas reduzimos o espaço */
+    .grid-loja {
+        gap: 15px;
     }
-    .containerprodutos{
-        grid-template-columns: repeat(2,1fr);
-    }
-    .produto{
-      grid-template-columns: repeat(2,1fr);
+
+    .navbar a {
+        padding: 8px 15px;
+        font-size: 0.8rem;
     }
 }
-@media screen and (max-width:426px){
-    #topo{
-        background-color:darkmagenta;
+
+/* 2. MOBILE (Até 425px) */
+@media (max-width: 425px) {
+    body {
+        /* No mobile, o gradiente pode ser vertical para facilitar a leitura */
+        background: linear-gradient(180deg, #5db9ff 50%, #ff9ecd 50%);
     }
-    .menu > ul{
-        flex-direction:column;
+
+    .glass-container {
+        width: 98%;
+        border-radius: 15px; /* Bordas menos arredondadas para ganhar espaço */
+        padding: 15px;
+    }
+
+    .grid-loja {
+        grid-template-columns: 1fr; /* UM card por linha (empilhado) */
+    }
+
+    .navbar {
+        display: grid;
+        grid-template-columns: 1fr 1fr; /* Menu vira uma grade 2x2 */
+        gap: 10px;
+    }
+
+    .navbar a {
         text-align: center;
-        height:1px;
-        overflow: hidden;  
-        transition:height 1s linear;
-    }
-    .menu li{
-        border-bottom:1px dashed white;
-        padding:5px 0;
-        margin:2px 0;
+        margin: 0;
     }
 
-    #aberturamenu:checked ~ ul{
-       height:150px; 
+    .footer-dark {
+        grid-template-columns: 1fr; /* Rodapé empilhado */
+        padding: 20px;
+        text-align: center;
     }
 
-    #botaomenu{
-        display:flex;
-        width:40px;
-        height:40px;
-        flex-direction: column;
-        justify-content: space-around;
-        padding:2px;
-        border:1px solid white;
-        border-radius:10px;
-        margin:5px;
-    }
-    .linha{
-        height:5px;
-        background-color:white;
-    }
-
-    .containerprodutos{
-        grid-template-columns: 1fr;
-    }
-    .produto{
-        grid-template-columns: 1fr 1fr;
-    }
-    .produto > img{
-        grid-row:1/4;
-        object-fit: cover;
+    .main-header h1 {
+        font-size: 1.5rem;
     }
 }

@@ -1,38 +1,62 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
+<html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <title>Mundo Kids - Sobre Nós</title>
-  <link rel="stylesheet" href="estilo.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mundo Kids - Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <h1>MUNDO KIDS</h1>
-    <p>Conforto e estilo desde os primeiros passos</p>
-  </header>
 
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="produtos.html">Produtos</a>
-    <a href="sobre.html">Sobre nós</a>
-    <a href="formulario.html">Formulário</a>
-  </nav>
+    <header class="main-header">
+        <h1>MUNDO KIDS</h1>
+        <p>Conforto e estilo desde os primeiros passos</p>
+    </header>
 
-  <section>
-    <h2>Nossa História</h2>
-    <div class="sobre">
-      <p>
-       <h3> Em 2014 nasceu uma loja com o sonho de oferecer às crianças roupas modernas,confortáveis e seguras, sem perder a alegria da infância. Desde então, selecionamos marcas de qualidade com foco no bem-estar dos pequenos e na tranquilidade dos pais.</h3>
-      </p>
-      <img src="imagens/fotoloja.png" alt="Loja Mundo Kids">
-      <img src="imagens/foto loja.jpg" alt="Dona">
-      <img src="imagens/fotocompra.webp" alt="Dona">
-      <img src="imagens/fotodona.jpg" alt="Dona">
-      <h3>Nossa missão é trazer conforto, estilo e qualidade para os pequenos</h3>
-    </div>
-  </section>
-  <footer>
-    <h2>(77) 99999-9999</h2>
-  </footer>
+    <main class="main-card">
+        <nav class="navbar">
+          <a href="index.html">Home</a>
+          <a href="produtos.html">Produtos</a>
+          <a href="sobre.html">Sobre nós</a>
+          <a href="formulario.html">Formulario</a>
+        </nav>
+
+        <section class="store-section">
+            <h2>Nossa loja</h2>
+            
+            <div class="grid-container">
+                <div class="info-card">
+                    <img src="imagens/fotocompra.webp" alt="Logo Mundo Kids" class="logo-img">
+                </div>
+
+                <div class="info-card">
+                    <div class="text-content">
+                        <h3>Bem-vindo à Mundo Kids!</h3>
+                        <p>Roupas modernas, confortáveis e seguras para seu filho(a).</p>
+                    </div>
+                    <img src="imagens/fotodona.jpg" alt="Fachada da Loja" class="store-img">
+                </div>
+                <br>  
+                        <h2> Em 2014 nasceu uma loja com o sonho de oferecer às crianças roupas modernas,confortáveis e seguras, sem perder a alegria da infância. Desde então, selecionamos marcas de qualidade com foco no bem-estar dos pequenos e na tranquilidade dos pais.</h2>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer-glass">
+        <div class="footer-col">
+            <h4>CONTATO</h4>
+            <p>Fale conosco: (54) 9999-9999</p>
+        </div>
+        <div class="footer-col">
+            <h4>MUNDO KIDS</h4>
+            <p>Conheça a empresa</p>
+        </div>
+        <div class="footer-col">
+            <h4>LOCALIZAÇÃO</h4>
+            <p>Rua das Flores, nº 1234</p>
+        </div>
+    </footer>
+
 </body>
 </html>
